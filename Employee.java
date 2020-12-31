@@ -1,19 +1,17 @@
-package com.emp;
+package inheritdemo;
 
 public class Employee {
-  
-	public String name;
-	public double sal;
-	public int empid;
-	@Override
-	public String toString() {
-		return "Employee [name=" + name + ", sal=" + sal + ", empid=" + empid + "]";
-	}
-	public Employee(String name, double sal, int empid) {
-		super();
-		this.name = name;
-		this.sal = sal;
-		this.empid = empid;
-	}
-	
+public int empno;
+public String empname;
+public int bs;
+public Employee(int empno, String empname, int bs) {
+	super();
+	this.empno = empno;
+	this.empname = empname;
+	this.bs = bs;
+}
+public double calctax()
+{
+	return 0;
+}
 }
